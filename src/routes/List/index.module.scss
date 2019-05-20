@@ -1,0 +1,185 @@
+@import "../../style/base.scss";
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.tag {
+  color: $main-color;
+  background: $main-color-light;
+  padding: 2px 4px;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.bg {
+  padding: 24px 0;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.searchText {
+  width: 412px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.location {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hr {
+  @extend .flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: #999999;
+  hr {
+    flex-grow: 1;
+  }
+  div {
+    padding: 0 20px;
+  }
+}
+
+.total {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  > span {
+    color: $main-color;
+  }
+}
+.orderBy {
+  @extend .flex;
+  font-size: 16px;
+  margin-bottom: 20px;
+  > div {
+    padding-right: 40px;
+    cursor: pointer;
+    &.active {
+      color: $main-color;
+    }
+  }
+}
+
+.main {
+  display: flex;
+}
+
+.list {
+  border-top: 1px solid #e9e9e9;
+  padding: 20px 0 0 0;
+  flex-grow: 1;
+  .store {
+    @extend .flex;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    .img {
+      width: 260px;
+      height: 150px;
+      background: #999999;
+      margin-right: 16px;
+    }
+    .info {
+      flex-grow: 1;
+      height: 150px;
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      .tags {
+        @extend .flex;
+        font-size: 12px;
+        margin-top: 20px;
+        > span {
+          @extend .tag;
+        }
+      }
+    }
+    .eye {
+      font-size: 14px;
+      margin-bottom: 40px;
+      text-align: right;
+      > img {
+        width: 20px;
+      }
+    }
+    .btnDetail {
+      color: $main-color;
+      border-color: $main-color;
+    }
+  }
+}
+
+.aside {
+  width: 280px;
+  padding: 16px 0 16px 20px;
+
+  .btnAside {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
+  .asideTitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .recommendList {
+    border-top: 1px solid #e9e9e9;
+    padding-top: 16px;
+    cursor: pointer;
+    .recommend {
+      @extend .flex;
+      margin-bottom: 24px;
+      > img {
+        width: 120px;
+        height: 75px;
+        background: #999;
+        margin-right: 10px;
+      }
+      > div {
+        .title {
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        span {
+          color: $main-color;
+        }
+      }
+    }
+  }
+
+  .asideTags {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #e9e9e9;
+    padding-top: 16px;
+    > span {
+      @extend .tag;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.pagination {
+  text-align: center;
+}
+
+.loading {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.arrow {
+  width: 10px;
+  height: 6px;
+  margin: -2px 0 0 5px;
+}

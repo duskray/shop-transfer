@@ -1,0 +1,55 @@
+@import "../../style/base.scss";
+
+
+.filter {
+  position: relative;
+  .type {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      width: 60px;
+      &::after {
+        content: ":";
+      }
+    }
+    .options {
+      display: flex;
+      font-size: 15px;
+      flex-wrap: wrap;
+      flex-basis: 100%;
+      .option {
+        padding: 2px 20px;
+        cursor: pointer;
+        &.active {
+          color: #258FF8;
+        }
+      }
+    }
+    
+  }
+
+  .areaMin {
+    width: 60px;
+  }
+
+  .areaMax {
+    width: 60px;
+  }
+  .customSubmit {
+    font-size: 14px;
+    padding-left: 5px;
+    color: $main-color;
+    cursor: pointer;
+  }
+
+  .more {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: $main-color;
+    cursor: pointer;
+  }
+}

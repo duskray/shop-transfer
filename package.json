@@ -1,0 +1,41 @@
+{
+  "name": "cloud-shop-transfer-web",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.16.5",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.11.0",
+    "classnames": "^2.2.6",
+    "customize-cra": "^0.2.12",
+    "fs-extra": "^7.0.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "qs": "^6.7.0",
+    "react": "^16.8.6",
+    "react-app-rewired": "^2.1.3",
+    "react-dom": "^16.8.6",
+    "react-image-gallery": "^0.8.16",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://devcloud-shop-transfer.shishike.com",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "webpack-plugin-create-multiple-bundle-from-string-replace": "^0.2.7"
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../style/base.scss";
+
+.blueTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  div {
+    margin-right: 16px;
+  }
+  .blueBlock {
+    height: 24px;
+    width: 6px;
+    background: $main-color;
+  }
+  .main {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .sub {
+    font-size: 14px;
+    align-self: flex-end;
+    span {
+      color: $main-color;
+    }
+  }
+}

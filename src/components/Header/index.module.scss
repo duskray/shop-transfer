@@ -1,0 +1,47 @@
+@import "../../style/base.scss";
+
+.header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.logoWrapper {
+  flex-grow: 1;
+}
+
+.logo {
+  height: 40px;
+}
+
+.navLink {
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+
+  &.active {
+    color: $main-color;
+  }
+}
+
+.navLink:hover {
+  color: $main-color;
+}
+
+.hotline {
+  width: 18px;
+  margin: 0 5px 0 20px;
+}
+
+.line {
+  border-right: 1px #333 solid;
+  width: 1px;
+  height: 18px;
+}
+
+.tel {
+  width: 127px;
+}

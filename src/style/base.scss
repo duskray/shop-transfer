@@ -1,0 +1,20 @@
+$breakpoints: (  'xs': 'only screen and ( min-width: 480px)',  'sm': 'only screen and ( min-width: 768px)',  'md': 'only screen and ( min-width: 992px)',  'lg': 'only screen and ( min-width: 1200px)',) !default;
+
+$main-color: #258FF8;
+$main-color-light: #D7EBFF;
+$error-color: #FF5453;
+$main-color-2: #FF7F29;
+
+
+
+@mixin respond-to($breakpoint) {
+  $query: map-get($breakpoints, $breakpoint);
+
+  @if not $query {
+    @error 'No value found for `#{$breakpoint}`. Please make sure it is defined in `$breakpoints` map.';
+  }
+
+  @media #{if(type-of($query) == 'string', unquote($query), inspect($query))} {
+    @content;
+  }
+}

@@ -1,0 +1,95 @@
+@import "../../style/base.scss";
+
+
+.bgLight {
+  background: #f5f5f5;
+}
+
+.bg {
+  background: #eeeeee;
+}
+
+.point {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0;
+  width: 1000px;
+  margin: 0 auto;
+  white-space: nowrap;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+  > div {
+    width: 20%;
+    text-align: center;
+    .title {
+      font-size: 16px;
+      margin: 40px 0 24px;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      > div {
+        width: 80px;
+        height: 80px;
+        margin: 0 4px;
+        background: #e9e9e9;
+        vertical-align: middle;
+        line-height: 80px;
+        cursor: pointer;
+        img {
+          width: 24px;
+        }
+      }
+    }
+    .qr {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+      img {
+        width: 88px;
+        height: 88px;
+      }
+    }
+    .text {
+      display: flex;
+      justify-content: center;
+      > div {
+        margin: 12px 15px;
+      }
+    }
+    .weiboIcons {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 24px;
+        height: 20px;
+        margin: 0 30px;
+      }
+    }
+  }
+  .contactNum {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  > div {
+    margin: 20px 28px 40px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+}

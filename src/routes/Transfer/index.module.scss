@@ -1,0 +1,53 @@
+@import "../../style/base.scss";
+
+.banner {
+  height: 440px;
+  overflow: hidden;
+  background: url(assets/banner.png) center;
+  padding: 56px 0;
+  .content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .title {
+    flex-grow: 1;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding: 40px 0 0 0;
+    span {
+      font-size: 60px;
+    }
+    > div:last-child {
+      font-size: 28px;
+      margin-top: 40px;
+      span {
+        font-size: 40px;
+      }
+    }
+  }
+  .modal {
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    height: 328px;
+    padding: 40px;
+    .modalTitle {
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .modalSub {
+      color: #666666;
+      margin: 24px 0 32px;
+    }
+    .error {
+      margin: 8px 0 0;
+      color: $error-color;
+      height: 30px;
+    }
+    .btnSubmit {
+      width: 100%;
+    }
+  }
+}
